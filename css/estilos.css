@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+section{
+    background-color: #d62a2a;
+}
+
+
+  .btn-blanco {
+    background-color: var(--blanco);
+    color: var(--rosa);
+    border: none;
+  }
+
+
+  :root {
+    --rosa: #e74c3c;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #333333;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.logo {
+  background-image: url('./imagenes/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+.letras {
+  font-size: 2em;
+
+
+
+
+
+
+
+
+  animation: move-right 3s ease-in-out  forwards;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.letras_principal {
+  font-size: 8em;
+
+
+
+
+
+
+
+
+  animation: move-right 3s ease-in-out  forwards;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
