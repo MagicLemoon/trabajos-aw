@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+
+
+    
+</head>
+<body>
+    
+ 
+<div class="container-fluid bg-secondary p-0 bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand " href="index.html">
+                <img src="./imagenes/logo.png" alt="" class="img-fluid" style="max-width: 100px;">
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: var(--rosa);" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: var(--rosa);">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html" style="color: var(--rosa);">Sobre nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div id="inicio" class="d-flex vh-100" style="background-image: url('./imagenes/IMG_20240613_182846.jpg'); background-size: cover;">
+        <div class="container align-self-center">
+            <h1 class="letras_principal" style="color: var(--blanco);">Eventos</h1>
+            <p class="letras" style="color: var(--blanco);">Revisa nuestros proximos eventos en el calendario inferior e informanos que te gustaria ver en un futuro.</p>
+            <a href="#eventos" class="btn btn-blanco">Revisa nuestros futuros eventos</a>
+        </div>
+    </div>
+
+    <div id="eventos" class="d-flex vh-100 p-3 p-md-5 text-center" style="background-color: var(--negro);">
+        <div class="container align-self-center">
+            <h1 class="display-4 fw-bold text-light">Eventos</h1>
+            <div id="calendar" class="my-5 text-danger "></div>
+        </div>
+    </div>
+
+  
+    <div id="catalogo" class="d-flex vh-100" style="background-image: url(./imagenes/parallax_efecto.jpg); background-size: cover; background-color: var(--negro  )">
+        <div class="container align-self-center">
+            <h1 style="color: var(--negro);">Esta es una invitacion para aprender a pintar tus figuras y obtener un descuento</h1>
+            <form class="form-inline my-2 my-lg-0" id="catalogo_form" onsubmit="alert('Tu correo esta tomado en cuenta para el siguiente evento de pintar'); return false;">
+                <input class="form-control mr-sm-2" type="email" placeholder="Pon tu correo aqui">
+                <br>
+                <input class="form-control mr-sm-2" type="text" placeholder="Que te gustaria ver">
+                <br>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/java.js"></script>
+    
+</body>
+</html>

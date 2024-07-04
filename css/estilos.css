@@ -5,10 +5,17 @@
  
 }
 
+
 section{
     background-color: #d62a2a;
 }
 
+
+  .btn-rosa {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    border: none;
+  }
 
   .btn-blanco {
     background-color: var(--blanco);
@@ -16,6 +23,17 @@ section{
     border: none;
   }
 
+  .btn-negro {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: none;
+  }
+
+  .btn-gris {
+    background-color: var(--gris);
+    color: var(--blanco);
+    border: none;
+  }
 
   :root {
     --rosa: #e74c3c;
@@ -23,8 +41,6 @@ section{
     --negro: #000;
     --gris: #333333;
   }
-
-
 
 @media screen and (max-width: 768px) {
   .parallax {
@@ -83,3 +99,53 @@ section{
   }
 }
 
+.contenedor{
+  background-color: rgb(181, 53, 53);   ;}
+
+  
+  .transition {
+      transition: all 0.3s ease-in-out;
+  }
+
+  .transition:hover {
+      transform: scale(1.05);
+  }
+
+  .fade-in {
+      animation: fade-in 2s;
+  }
+  @keyframes fade-in {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  .parallax_index {
+
+      background-image: url("../imagenes/parallax_2.jpg");
+  
+   
+      height: 500px;
+  
+   
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallax {
+    
+      background-image: url("./imagenes/hollow.jpeg");
+
+     
+      height: 500px; 
+
+      
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
